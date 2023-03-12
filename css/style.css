@@ -234,8 +234,9 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 100vh;
+  height: 125vh;
   background: url("../images/Wallpaper.jpg") top right no-repeat;
+  margin-top: -150px;
   background-size: cover;
   position: relative;
 }
