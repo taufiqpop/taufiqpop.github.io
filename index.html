@@ -17,7 +17,7 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-  <!-- CSS -->
+  <!-- Bootstrap CSS -->
   <link href="css/aos/aos.css" rel="stylesheet">
   <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
   <link href="css/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -46,7 +46,7 @@
         <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i><span>About</span></a></li>
         <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file"></i><span>Resume</span></a></li>
         <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-code-alt"></i><span>Skills</span></a></li>
-        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bxl-stack-overflow"></i><span>Portfolio</span></a></li>
+        <li><a href="#project" class="nav-link scrollto"><i class="bx bxl-stack-overflow"></i><span>Portfolio</span></a></li>
         <li><a href="#testimonials" class="nav-link scrollto"><i class="bx bx-group"></i><span>Testimonials</span></a></li>
         <li><a href="#gallery" class="nav-link scrollto"><i class="bx bx-image"></i><span>Gallery</span></a></li>
         <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i><span>Contact</span></a></li>
@@ -370,19 +370,31 @@
     </section>
 
     <!-- Portfolio -->
-    <section id="portfolio" class="project section-bg">
+    <section id="project" class="project section-bg">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
           <h2>Portfolio</h2>
         </div>
 
-        <!-- Photos -->
-        <div class="row project-container" data-aos="fade-up" data-aos-delay="200">
+        <!-- Filters -->
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <ul id="project-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-college">College</li>
+              <li data-filter=".filter-project">Project</li>
+              <li data-filter=".filter-freelance">Freelance</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Account -->
+        <div class="row" data-aos="fade-up" data-aos-delay="200">
 
           <!-- Linkedin -->
           <div class="col-lg-6 col-md-6 project-item">
             <div class="project-wrap">
-              <img src="img/portfolio/linkedin.jpg" class="img-fluid">
+              <img src="img/portfolio/account/linkedin.jpg" class="img-fluid">
               <div class="project-info">
                 <div class="project-links">
                   <a href="img/portfolio/linkedin.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
@@ -395,7 +407,7 @@
           <!-- GitHub -->
           <div class="col-lg-6 col-md-6 project-item">
             <div class="project-wrap">
-              <img src="img/portfolio/github.jpg" class="img-fluid">
+              <img src="img/portfolio/account/github.jpg" class="img-fluid">
               <div class="project-info">
                 <div class="project-links">
                   <a href="img/portfolio/github.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
@@ -404,14 +416,19 @@
               </div>
             </div>
           </div>
+        </div>
 
+        <!-- List Project -->
+        <div class="row project-container" data-aos="fade-up" data-aos-delay="200">
+          
+          <!-- Project -->
           <!-- Rapma FM -->
-          <div class="col-lg-4 col-md-6 project-item">
+          <div class="col-lg-4 col-md-6 project-item filter-project">
             <div class="project-wrap">
-              <img src="img/portfolio/rapmafm.png" class="img-fluid">
+              <img src="img/portfolio/project/rapmafm.png" class="img-fluid">
               <div class="project-info">
                 <div class="project-links">
-                  <a href="img/portfolio/rapmafm.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
+                  <a href="img/portfolio/project/rapmafm.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
                   <a href="https://rapmafm.com" target="_blank"><i class="bx bx-link-external"></i></a>
                 </div>
               </div>
@@ -419,12 +436,12 @@
           </div>
 
           <!-- MTATV -->
-          <div class="col-lg-4 col-md-6 project-item">
+          <div class="col-lg-4 col-md-6 project-item filter-project">
             <div class="project-wrap">
-              <img src="img/portfolio/mtatv.jpg" class="img-fluid">
+              <img src="img/portfolio/project/mtatv.jpg" class="img-fluid">
               <div class="project-info">
                 <div class="project-links">
-                  <a href="img/portfolio/mtatv.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
+                  <a href="img/portfolio/project/mtatv.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
                   <a href="https://github.com/taufiqpop99/web-mtatv" target="_blank"><i class="bx bx-link-external"></i></a>
                 </div>
               </div>
@@ -432,12 +449,12 @@
           </div>
 
           <!-- RSUI YAKSSI -->
-          <div class="col-lg-4 col-md-6 project-item">
+          <div class="col-lg-4 col-md-6 project-item filter-project">
             <div class="project-wrap">
-              <img src="img/portfolio/rsui-yakssi.png" class="img-fluid">
+              <img src="img/portfolio/project/rsui-yakssi.png" class="img-fluid">
               <div class="project-info">
                 <div class="project-links">
-                  <a href="img/portfolio/rsui-yakssi.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
+                  <a href="img/portfolio/project/rsui-yakssi.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
                   <a href="https://github.com/taufiqpop99/rsui-yakssi" target="_blank"><i class="bx bx-link-external"></i></a>
                 </div>
               </div>
@@ -445,12 +462,12 @@
           </div>
 
           <!-- RAPMAFEST #8 -->
-          <div class="col-lg-4 col-md-6 project-item">
+          <div class="col-lg-4 col-md-6 project-item filter-project">
             <div class="project-wrap">
-              <img src="img/portfolio/rapmafest8.png" class="img-fluid">
+              <img src="img/portfolio/project/rapmafest8.png" class="img-fluid">
               <div class="project-info">
                 <div class="project-links">
-                  <a href="img/portfolio/rapmafest8.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
+                  <a href="img/portfolio/project/rapmafest8.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
                   <a href="https://rapmafm.com/tiket-rapmafest.html" target="_blank"><i class="bx bx-link-external"></i></a>
                 </div>
               </div>
@@ -458,12 +475,12 @@
           </div>
 
           <!-- RAPMAFEST #9 -->
-          <div class="col-lg-4 col-md-6 project-item">
+          <div class="col-lg-4 col-md-6 project-item filter-project">
             <div class="project-wrap">
-              <img src="img/portfolio/rapmafest9.png" class="img-fluid">
+              <img src="img/portfolio/project/rapmafest9.png" class="img-fluid">
               <div class="project-info">
                 <div class="project-links">
-                  <a href="img/portfolio/rapmafest9.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
+                  <a href="img/portfolio/project/rapmafest9.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
                   <a href="https://rapmafm.com/tiket-rapmafest9.html" target="_blank"><i class="bx bx-link-external"></i></a>
                 </div>
               </div>
@@ -471,52 +488,211 @@
           </div>
 
           <!-- RAPMAFEST #10 -->
-          <div class="col-lg-4 col-md-6 project-item">
+          <div class="col-lg-4 col-md-6 project-item filter-project">
             <div class="project-wrap">
-              <img src="img/portfolio/rapmafest10.png" class="img-fluid">
+              <img src="img/portfolio/project/rapmafest10.png" class="img-fluid">
               <div class="project-info">
                 <div class="project-links">
-                  <a href="img/portfolio/rapmafest10.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
+                  <a href="img/portfolio/project/rapmafest10.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
                   <a href="https://rapmafm.com/fest/index.html" target="_blank"><i class="bx bx-link-external"></i></a>
                 </div>
               </div>
             </div>
           </div>
-          
+
           <!-- RAPMADAY #8 -->
-          <div class="col-lg-4 col-md-6 project-item">
+          <div class="col-lg-4 col-md-6 project-item filter-project">
             <div class="project-wrap">
-              <img src="img/portfolio/rapmaday8.png" class="img-fluid">
+              <img src="img/portfolio/project/rapmaday8.png" class="img-fluid">
               <div class="project-info">
                 <div class="project-links">
-                  <a href="img/portfolio/rapmaday8.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
+                  <a href="img/portfolio/project/rapmaday8.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
                   <a href="https://rapmafm.com/rapmaday8.html" target="_blank"><i class="bx bx-link-external"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Website Data SKS FKI UMS -->
-          <div class="col-lg-4 col-md-6 project-item">
+          <!-- College -->
+          <!-- Website Data SKS FKI UMS (PWS) -->
+          <div class="col-lg-4 col-md-6 project-item filter-college">
             <div class="project-wrap">
-              <img src="img/portfolio/fki.jpeg" class="img-fluid">
+              <img src="img/portfolio/college/fki.jpeg" class="img-fluid">
               <div class="project-info">
                 <div class="project-links">
-                  <a href="img/portfolio/fki.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
+                  <a href="img/portfolio/college/fki.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
                   <a href="https://taufiqpop99.github.io/tugas-kelompok-pws" target="_blank"><i class="bx bx-link-external"></i></a>
+                  <p><b>Website Data SKS Fakultas Komunikasi & Informatika</b></p>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Computer Based Test (CBT) -->
-          <div class="col-lg-4 col-md-6 project-item">
+          <!-- Computer Based Test [CBT] (PWD)-->
+          <div class="col-lg-4 col-md-6 project-item filter-college">
             <div class="project-wrap">
-              <img src="img/portfolio/cbt.png" class="img-fluid">
+              <img src="img/portfolio/college/cbt.png" class="img-fluid">
               <div class="project-info">
                 <div class="project-links">
-                  <a href="img/portfolio/cbt.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
+                  <a href="img/portfolio/college/cbt.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
                   <a href="https://github.com/taufiqpop99/tugas-akhir-pwd" target="_blank"><i class="bx bx-link-external"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Alice (PV) -->
+          <div class="col-lg-4 col-md-6 project-item filter-college">
+            <div class="project-wrap">
+              <img src="img/portfolio/college/alice.jpg" class="img-fluid">
+              <div class="project-info">
+                <div class="project-links">
+                  <a href="img/portfolio/college/alice.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
+                  <a href="https://github.com/taufiqpop99/tugas-kelompok-alice" target="_blank"><i class="bx bx-link-external"></i></a>
+                  <p><b>Tema Storyboard : Perbedaan Pendapat</b></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Greenfoot (PV) -->
+          <div class="col-lg-4 col-md-6 project-item filter-college">
+            <div class="project-wrap">
+              <img src="img/portfolio/college/greenfoot.png" class="img-fluid">
+              <div class="project-info">
+                <div class="project-links">
+                  <a href="img/portfolio/college/greenfoot.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
+                  <a href="https://github.com/taufiqpop99/tugas-kelompok-greenfoot" target="_blank"><i class="bx bx-link-external"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Burjo (PBO) -->
+          <div class="col-lg-4 col-md-6 project-item filter-college">
+            <div class="project-wrap">
+              <img src="img/portfolio/college/burjo.jpg" class="img-fluid">
+              <div class="project-info">
+                <div class="project-links">
+                  <a href="img/portfolio/college/burjo.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
+                  <a href="https://github.com/taufiqpop99/tugas-akhir-pbo" target="_blank"><i class="bx bx-link-external"></i></a>
+                  <p><b>Aplikasi : Menu Burjo</b></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Sort (Praktikum ASD) -->
+          <div class="col-lg-4 col-md-6 project-item filter-college">
+            <div class="project-wrap">
+              <img src="img/portfolio/college/quick-sort.jpg" class="img-fluid">
+              <div class="project-info">
+                <div class="project-links">
+                  <a href="img/portfolio/college/quick-sort.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
+                  <a href="https://github.com/taufiqpop99/tugas-akhir-prak-asd" target="_blank"><i class="bx bx-link-external"></i></a>
+                  <p><b>Data Jadwal Pertandingan Piala Dunia 2018</b></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contruct 2 (PGA) -->
+          <div class="col-lg-4 col-md-6 project-item filter-college">
+            <div class="project-wrap">
+              <img src="img/portfolio/college/platformer.png" class="img-fluid">
+              <div class="project-info">
+                <div class="project-links">
+                  <a href="img/portfolio/college/platformer.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
+                  <a href="https://github.com/taufiqpop99/tugas-akhir-pga-construct" target="_blank"><i class="bx bx-link-external"></i></a>
+                  <p><b>Game Type : Platformer</b></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Unity (PGA) -->
+          <div class="col-lg-4 col-md-6 project-item filter-college">
+            <div class="project-wrap">
+              <img src="img/portfolio/college/labirin.jpeg" class="img-fluid">
+              <div class="project-info">
+                <div class="project-links">
+                  <a href="img/portfolio/college/labirin.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
+                  <a href="https://github.com/taufiqpop99/tugas-akhir-pga-unity" target="_blank"><i class="bx bx-link-external"></i></a>
+                  <p><b>Game : Labirin 3D</b></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Music Apps (PM) -->
+          <div class="col-lg-4 col-md-6 project-item filter-college">
+            <div class="project-wrap">
+              <img src="img/portfolio/college/music-apps.jpg" class="img-fluid">
+              <div class="project-info">
+                <div class="project-links">
+                  <a href="img/portfolio/college/music-apps.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
+                  <a href="https://github.com/taufiqpop99/tugas-akhir-pemrograman-mobile" target="_blank"><i class="bx bx-link-external"></i></a>
+                  <p><b>Aplikasi : Music Audio Player</b></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Freelance -->
+          <!-- Client : Alex -->
+          <div class="col-lg-4 col-md-6 project-item filter-freelance">
+            <div class="project-wrap">
+              <img src="img/portfolio/freelance/alex.jpeg" class="img-fluid">
+              <div class="project-info">
+                <div class="project-links">
+                  <a href="img/portfolio/freelance/alex.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
+                  <a href="https://www.instagram.com/_alxandria" target="_blank"><i class="bx bxl-instagram"></i></a>
+                  <a href="https://alexandriaha.github.io" target="_blank"><i class="bx bx-link-external"></i></a>
+                  <p><b>Client : Alexandria H.A.</b></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Client : Dazuf -->
+          <div class="col-lg-4 col-md-6 project-item filter-freelance">
+            <div class="project-wrap">
+              <img src="img/portfolio/freelance/dazuf.jpeg" class="img-fluid">
+              <div class="project-info">
+                <div class="project-links">
+                  <a href="img/portfolio/freelance/dazuf.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
+                  <a href="https://www.instagram.com/dazuf" target="_blank"><i class="bx bxl-instagram"></i></a>
+                  <a href="https://dazuf.github.io" target="_blank"><i class="bx bx-link-external"></i></a>
+                  <p><b>Client : Daffa Zufar F.</b></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Client : Sesi -->
+          <div class="col-lg-4 col-md-6 project-item filter-freelance">
+            <div class="project-wrap">
+              <img src="img/portfolio/freelance/sesi.jpeg" class="img-fluid">
+              <div class="project-info">
+                <div class="project-links">
+                  <a href="img/portfolio/freelance/sesi.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
+                  <a href="https://www.instagram.com/sesihaga" target="_blank"><i class="bx bxl-instagram"></i></a>
+                  <a href="https://sesihaga.github.io" target="_blank"><i class="bx bx-link-external"></i></a>
+                  <p><b>Client : Sesi Haga</b></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Client : Fathin -->
+          <div class="col-lg-4 col-md-6 project-item filter-freelance">
+            <div class="project-wrap">
+              <img src="img/portfolio/freelance/fathin.jpeg" class="img-fluid">
+              <div class="project-info">
+                <div class="project-links">
+                  <a href="img/portfolio/freelance/fathin.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
+                  <a href="https://nfathin.github.io" target="_blank"><i class="bx bx-link-external"></i></a>
+                  <p><b>Client : Fathin Fauzan</b></p>
                 </div>
               </div>
             </div>
@@ -960,7 +1136,7 @@
               </div>
             </div>
           </div>
-          
+
         </div>
       </div>
     </section>
@@ -1031,7 +1207,7 @@
     <div class="container">
 
       <!-- Motto -->
-      <h4>"KEEP CALM AND CHILL, BUT UNSTOPPABLE"</h4>
+      <h4>"keep calm and chill, but unstoppable"</h4>
       <br>
 
       <!-- Social Media -->
@@ -1052,7 +1228,7 @@
     </div>
   </footer>
 
-  <!-- JavaScript -->
+  <!-- Bootstrap JavaScript -->
   <script src="js/purecounter/purecounter.js"></script>
   <script src="js/aos/aos.js"></script>
   <script src="js/bootstrap /bootstrap.bundle.min.js"></script>
@@ -1064,6 +1240,9 @@
 
   <!-- Main JS -->
   <script src="js/script.js"></script>
+
+  <!-- My Script -->
+  <script src="js/my-script.js"></script>
 </body>
 
 </html>
