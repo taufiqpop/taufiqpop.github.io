@@ -312,3 +312,15 @@ window.CRISP_WEBSITE_ID = "d1a3310d-2d9a-484d-9e88-239aa90cfd99";
   s.async = 1;
   d.getElementsByTagName("head")[0].appendChild(s);
 })();
+
+// SWAL
+function sendMessage(event) {
+  event.preventDefault();
+
+  Swal.fire({
+    icon: 'success',
+    title: 'Pesan Terkirim',
+    text: 'Pesan Anda Telah Dikirim, Terima Kasih! 😊',
+    confirmButtonText: 'OK'
+  });
+}
