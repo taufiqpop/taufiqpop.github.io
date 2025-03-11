@@ -1,0 +1,127 @@
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .cv-container {
+            width: 800px;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+        }
+
+        .left-column {
+            width: 30%;
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .left-column img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+
+        .left-column h2 {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+
+        .left-column p {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        .right-column {
+            width: 70%;
+            padding: 20px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-top: 20px;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 5px;
+        }
+
+        .info {
+            margin-bottom: 10px;
+        }
+
+        .info p {
+            margin: 3px 0;
+        }
+
+        .skills ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        .skills ul li {
+            background: #2c3e50;
+            color: white;
+            padding: 5px;
+            display: inline-block;
+            margin: 5px;
+            border-radius: 5px;
+        }
+    </style>
+
+    <div class="cv-container">
+        <!-- Kolom Kiri -->
+        <div class="left-column">
+            <img src="https://via.placeholder.com/100" alt="Foto Profil">
+            <h2>Nama Anda</h2>
+            <p>Web Developer</p>
+            <p>Email: email@example.com</p>
+            <p>Telepon: 0812-3456-7890</p>
+            <p>Alamat: Jakarta, Indonesia</p>
+        </div>
+
+        <!-- Kolom Kanan -->
+        <div class="right-column">
+            <div class="section">
+                <div class="section-title">Tentang Saya</div>
+                <p>Saya adalah seorang Web Developer yang memiliki pengalaman dalam pengembangan aplikasi berbasis web dan mobile.</p>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Pengalaman Kerja</div>
+                <div class="info">
+                    <p><strong>Software Engineer</strong> - PT. Teknologi Maju (2022 - Sekarang)</p>
+                    <p>Mengembangkan aplikasi web berbasis React dan Node.js.</p>
+                </div>
+                <div class="info">
+                    <p><strong>Frontend Developer</strong> - Startup ABC (2020 - 2022)</p>
+                    <p>Mendesain dan mengembangkan UI menggunakan Vue.js dan Tailwind CSS.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Pendidikan</div>
+                <p><strong>Sarjana Teknik Informatika</strong> - Universitas XYZ (2016 - 2020)</p>
+            </div>
+
+            <div class="section skills">
+                <div class="section-title">Keahlian</div>
+                <ul>
+                    <li>HTML & CSS</li>
+                    <li>JavaScript</li>
+                    <li>React.js</li>
+                    <li>Node.js</li>
+                    <li>PHP & MySQL</li>
+                </ul>
+            </div>
+        </div>
+    </div>

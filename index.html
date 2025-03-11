@@ -1447,11 +1447,17 @@
       <div class="copyright">
         Copyright &copy; <strong><span>Taufiq Pop</span></strong> 2024
       </div>
+
+      <!-- Cetak PDF -->
+      <button class="btn btn-danger" id="download">Download PDF</button>
+
     </div>
   </footer>
 
   <!-- Bootstrap JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
   <script src="js/purecounter/purecounter.js"></script>
   <script src="js/aos/aos.js"></script>
   <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
@@ -1463,6 +1469,57 @@
 
   <!-- Main JS -->
   <script src="js/script.js"></script>
+
+  <!-- Cetak PDF -->
+  <script>
+    document.getElementById('download').addEventListener('click', async () => {
+      Swal.fire({
+        title: 'Sedang memproses...',
+        text: 'Mohon tunggu, PDF sedang dibuat.',
+        allowOutsideClick: false,
+        didOpen: () => {
+          Swal.showLoading();
+        }
+      });
+
+      try {
+        const response = await fetch("pdf.html");
+        const data = await response.text();
+        const {
+          jsPDF
+        } = window.jspdf;
+        const doc = new jsPDF();
+
+        const tempDiv = document.createElement("div");
+        tempDiv.innerHTML = data;
+        tempDiv.style.position = "absolute";
+        tempDiv.style.left = "-9999px";
+        document.body.appendChild(tempDiv);
+
+        const canvas = await html2canvas(tempDiv);
+        const imgData = canvas.toDataURL('image/png');
+        doc.addImage(imgData, 'PNG', 10, 10, 180, 0);
+
+        document.body.removeChild(tempDiv);
+
+        const pdfBlob = doc.output("blob");
+        const pdfUrl = URL.createObjectURL(pdfBlob);
+
+        window.open(pdfUrl, "_blank");
+
+        Swal.close();
+
+      } catch (error) {
+        Swal.fire({
+          icon: 'error',
+          title: 'Gagal!',
+          text: 'Terjadi kesalahan saat membuat PDF.',
+          confirmButtonColor: '#d33',
+          confirmButtonText: 'Tutup'
+        });
+      }
+    });
+  </script>
 </body>
 
 </html>
