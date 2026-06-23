@@ -35,14 +35,29 @@ export function PreLoader() {
 
 	return (
 		<div className="w-[100svw] h-[100svh] overflow-hidden bg-bgPrimaryLight dark:bg-bgPrimaryDark z-40 fixed top-0 left-0 flex flex-col justify-center items-center gap-8">
-			<div className="loader md:w-[150px] md:h-[150px] w-[100px] h-[100px]">
-				<div className="loader_cube loader_cube--color"></div>
-				<div className="loader_cube loader_cube--glowing"></div>
-				<span className="loader-span"></span>
+			<div className="font-mono text-left w-[350px]">
+				<h1 className="text-center text-2xl font-bold mb-6">
+					🤖 FAIRY AI ASSISTANT
+				</h1>
+
+				<p>{progress > 10 ? "[OK]" : "[..]"} Initializing Core</p>
+				<p>{progress > 35 ? "[OK]" : "[..]"} Loading Experience Data</p>
+				<p>{progress > 70 ? "[OK]" : "[..]"} Loading Projects</p>
+				<p>{progress > 90 ? "[OK]" : "[..]"} Starting Interface</p>
+
+				<div className="mt-6">
+					<div className="w-full h-2 bg-gray-700 rounded-full">
+					<div
+						className="h-full bg-white transition-all duration-300 rounded-full"
+						style={{ width: `${progress}%` }}
+					/>
+					</div>
+
+					<p className="mt-2 text-center">
+					{progress}%
+					</p>
+				</div>
 			</div>
-			<h1 className="text-2xl text-ctnPrimaryLight dark:text-ctnPrimaryDark">
-				{progress}%
-			</h1>
 		</div>
 	);
 }
