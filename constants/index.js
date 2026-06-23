@@ -328,7 +328,7 @@ const projects = [
       },
     ],
     image: "/assets/projects/afel.png",
-    source_code_link: "https://afel.online/",
+    source_code_link: "#",
     deployed_link: "https://afel.online/",
   },
   {
@@ -378,7 +378,7 @@ const projects = [
       },
     ],
     image: "/assets/projects/rsui-yakssi.png",
-    source_code_link: "https://github.com/taufiqpop/mtatv",
+    source_code_link: "#",
     deployed_link: "https://mtatv.net/",
   },
   {
@@ -399,7 +399,7 @@ const projects = [
       },
     ],
     image: "/assets/projects/mtatv.jpg",
-    source_code_link: "https://github.com/taufiqpop/mtatv",
+    source_code_link: "#",
     deployed_link: "https://mtatv.net/",
   },
 ];

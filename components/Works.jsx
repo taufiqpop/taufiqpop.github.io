@@ -19,6 +19,7 @@ function ProjectCard({
   deployed_link,
 }) {
   const CHAR_LIMIT = 280;
+  const hasGithub = source_code_link && source_code_link !== "#";
 
   return (
     <motion.div
@@ -30,16 +31,15 @@ function ProjectCard({
       <Tilt
         tiltMaxAngleX="10"
         tiltMaxAngleY="10"
-        className="dark:bg-bgSecondaryDark bg-bgSecondaryLight p-5 rounded-2xl sm:w-[370px] w-full h-fit min-h-[590px] shadow-sm shadow-primary"
+        className="dark:bg-bgSecondaryDark bg-bgSecondaryLight p-5 rounded-2xl w-full max-w-[320px] h-fit min-h-[400px] shadow-sm shadow-primary"
       >
-        <div className="relative w-full h-[230px]">
-          <div className="w-full h-full object-cover rounded-2xl relative">
+        <div className="relative w-full h-[160px]">
+          <div className="relative w-full aspect-video">
             <Image
               src={image}
               alt="project_image"
-              fill={true}
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 20vw"
-              className="object-cover"
+              fill
+              className="object-contain"
             />
           </div>
 
@@ -52,17 +52,26 @@ function ProjectCard({
             </div>
           </div>
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-            >
-              <GithubLogo className="w-2/3 h-2/3 z-10" />
-            </div>
+<button
+  disabled={!hasGithub}
+  onClick={() => window.open(source_code_link, "_blank")}
+  title={hasGithub ? "View Source Code" : "Source Code Not Available"}
+  className="
+    black-gradient
+    w-10 h-10
+    rounded-full
+    flex justify-center items-center
+    disabled:opacity-50
+    disabled:cursor-not-allowed
+  "
+>
+  <GithubLogo className="w-2/3 h-2/3 z-10" />
+</button>
           </div>
         </div>
 
         <div className="mt-5">
-          <h3 className="dark:text-ctnPrimaryDark text-ctnPrimaryLight font-bold text-[24px]">
+          <h3 className="dark:text-ctnPrimaryDark text-ctnPrimaryLight font-bold text-[20px]">
             {name}
           </h3>
           <p className="mt-2 dark:text-ctnSecondaryDark text-ctnSecondaryLight text-[14px]">
@@ -113,7 +122,7 @@ function Works() {
         </motion.p>
       </div>
 
-      <div className="md:mt-20 mt-10 flex justify-center flex-wrap gap-7">
+      <div className="md:mt-20 mt-10 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7 justify-items-center">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}

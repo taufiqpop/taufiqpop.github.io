@@ -23,7 +23,7 @@ export function PreLoader() {
 
 	useEffect(() => {
 		const updateProgress = () => {
-			for (let i = 0; i < 100; i++) {
+			for (let i = 0; i <= 100; i++) {
 				setTimeout(() => {
 					setProgress(i);
 				}, 30 * i);
@@ -46,11 +46,11 @@ export function PreLoader() {
 				<p>{progress > 90 ? "[OK]" : "[..]"} Starting Interface</p>
 
 				<div className="mt-6">
-					<div className="w-full h-2 bg-gray-700 rounded-full">
-					<div
-						className="h-full bg-white transition-all duration-300 rounded-full"
-						style={{ width: `${progress}%` }}
-					/>
+					<div className="w-full bg-black h-4 rounded-full overflow-hidden">
+						<div
+							className="h-full bg-green-500 rounded-full transition-[width] duration-100"
+							style={{ width: `${progress}%` }}
+						/>
 					</div>
 
 					<p className="mt-2 text-center">
