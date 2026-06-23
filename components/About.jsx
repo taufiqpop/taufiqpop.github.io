@@ -28,7 +28,7 @@ function About() {
         className="mt-4 dark:text-ctnSecondaryDark text-gray-300 text-[17px] w-full leading-[30px] flex flex-col justify-between gap-6"
       >
         <div>
-          Hello! I&apos;m Taufiq Pop, Bachelor's Degree in Informatics Engineering (GPA: 3.86) with 4+ years of experience in software development, specializing in backend systems and web application development.
+          Hello! I&apos;m Taufiq Pop, Bachelor&apos;s Degree in Informatics Engineering (GPA: 3.86) with 4+ years of experience in software development, specializing in backend systems and web application development.
           <br className="sm:block hidden" />
           <br className="sm:block hidden" />
           Delivered 47+ client projects including business applications, internal systems, and custom web platforms. Experienced in translating business requirements into scalable and maintainable technical solutions across the full development lifecycle.
