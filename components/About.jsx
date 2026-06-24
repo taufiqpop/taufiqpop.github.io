@@ -69,8 +69,7 @@ function About() {
           ))}
         </div>
         <Link
-          href="https://www.linkedin.com/in/taufiqpop"
-          // href="document/TaufiqPop_Resume.pdf"
+          href="https://drive.google.com/drive/folders/1ULy0FKMxb3GrnRjEgHOACus47CIR0nRP"
           target="_blank"
           rel="noreferrer"
           className="w-fit"

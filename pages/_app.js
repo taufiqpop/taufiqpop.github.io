@@ -21,7 +21,7 @@ export default function App({ Component, pageProps }) {
 		}
 	}, [loading]);
 
-	const title = "Portfolio | Taufiq Pop";
+	const title = "Curriculum Vitae | Taufiq Pop";
 	const description = "Hello! I'm Taufiq Pop, a passionate web developer and problem solver. Welcome to my portfolio";
 	const avatar = "https://res.cloudinary.com/dyle3hnpw/image/upload/v1696091629/portfolio/WhatsApp_Image_2023-09-30_at_10.02.55_PM_jk44v9.jpg";
 	const url = "https://taufiqpop.github.io";
