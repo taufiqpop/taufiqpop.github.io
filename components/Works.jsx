@@ -8,8 +8,9 @@ import { fadeIn, textVariant } from "../utils/motion";
 import truncateText from "@/utils/truncate";
 import GithubLogo from "./../public/assets/icons/github.svg";
 import RocketLogo from "./../public/assets/icons/rocket.svg";
+import Link from "next/link";
 
-function ProjectCard({
+export function ProjectCard({
   index,
   name,
   description,
@@ -52,21 +53,21 @@ function ProjectCard({
             </div>
           </div>
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-<button
-  disabled={!hasGithub}
-  onClick={() => window.open(source_code_link, "_blank")}
-  title={hasGithub ? "View Source Code" : "Source Code Not Available"}
-  className="
-    black-gradient
-    w-10 h-10
-    rounded-full
-    flex justify-center items-center
-    disabled:opacity-50
-    disabled:cursor-not-allowed
-  "
->
-  <GithubLogo className="w-2/3 h-2/3 z-10" />
-</button>
+            <button
+              disabled={!hasGithub}
+              onClick={() => window.open(source_code_link, "_blank")}
+              title={hasGithub ? "View Source Code" : "Source Code Not Available"}
+              className="
+                black-gradient
+                w-10 h-10
+                rounded-full
+                flex justify-center items-center
+                disabled:opacity-50
+                disabled:cursor-not-allowed
+              "
+            >
+              <GithubLogo className="w-2/3 h-2/3 z-10" />
+            </button>
           </div>
         </div>
 
@@ -95,6 +96,10 @@ function ProjectCard({
 }
 
 function Works() {
+    const featuredProjects = projects.filter(
+      (project) => project.featured
+    );
+    
   return (
     <section className="xl:my-36 md:mx-36 p-8 " id="projects">
       <motion.div
@@ -123,10 +128,38 @@ function Works() {
       </div>
 
       <div className="md:mt-20 mt-10 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7 justify-items-center">
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
+        {featuredProjects.map((project, index) => (
+          <ProjectCard
+            key={`project-${index}`}
+            index={index}
+            {...project}
+          />
         ))}
       </div>
+
+      <motion.div
+        variants={fadeIn("up", "spring", 0.2, 0.75)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        className="mt-12 flex justify-center"
+      >
+        <Link
+          href="/projects"
+          className="
+            px-6 py-3
+            rounded-xl
+            bg-primary
+            text-white
+            font-medium
+            shadow-lg
+            hover:scale-105
+            transition-all duration-300
+          "
+        >
+          Explore All Projects (47+) 🚀 [UNDER MAINTENANCE]
+        </Link>
+      </motion.div>
     </section>
   );
 }

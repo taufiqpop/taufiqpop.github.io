@@ -308,32 +308,7 @@ const testimonials = [
 const projects = [
   {
     name: "AFEL",
-    description: "",
-    tags: [
-      {
-        name: "codeigniter",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "php",
-        color: "green-text-gradient",
-      },
-      {
-        name: "javascript",
-        color: "yellow-text-gradient",
-      },
-      {
-        name: "bootstrap",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: "/assets/projects/afel.png",
-    source_code_link: "#",
-    deployed_link: "https://afel.online/",
-  },
-  {
-    name: "RAPMA FM Radio",
-    description: "",
+    description: "Core Projects",
     tags: [
       {
         name: "laravel",
@@ -352,13 +327,40 @@ const projects = [
         color: "blue-text-gradient",
       },
     ],
-    image: "/assets/projects/rapmafm.png",
+    image: "/assets/projects/core/afel.png",
+    source_code_link: "#",
+    deployed_link: "https://afel.online/",
+    featured: true,
+  },
+  {
+    name: "RAPMA FM Radio",
+    description: "Core Projects",
+    tags: [
+      {
+        name: "laravel",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "php",
+        color: "green-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "bootstrap",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: "/assets/projects/core/rapmafm.png",
     source_code_link: "https://github.com/taufiqpop/rapmafm",
     deployed_link: "https://rapmafm.com/",
+    featured: true,
   },
   {
     name: "RSUI YAKSSI Gemolong",
-    description: "",
+    description: "Core Projects",
     tags: [
       {
         name: "codeigniter",
@@ -377,13 +379,14 @@ const projects = [
         color: "blue-text-gradient",
       },
     ],
-    image: "/assets/projects/rsui-yakssi.png",
+    image: "/assets/projects/core/rsui-yakssi.png",
     source_code_link: "#",
     deployed_link: "https://mtatv.net/",
+    featured: true,
   },
   {
     name: "PT. ARINA AL-HAQ (MTATV)",
-    description: "",
+    description: "Support Projects",
     tags: [
       {
         name: "php",
@@ -398,9 +401,10 @@ const projects = [
         color: "blue-text-gradient",
       },
     ],
-    image: "/assets/projects/mtatv.jpg",
+    image: "/assets/projects/support/mtatv.jpg",
     source_code_link: "#",
     deployed_link: "https://mtatv.net/",
+    featured: false,
   },
 ];
 
