@@ -74,11 +74,13 @@ function About() {
           rel="noreferrer"
           className="w-fit"
         >
-          <div className="btn w-fit bg-tertiary text-white px-7 py-2 rounded-md overflow-hidden relative cursor-pointer">
+          <div className="btn w-fit bg-tertiary text-white w-40 px-7 py-2 rounded-md overflow-hidden relative cursor-pointer">
             <div className="original bg-primary text-white px-7 py-2">
-              Resume
+              📂 Resume
             </div>
             <div className="letters">
+              <span>📂</span>
+              <span>&nbsp;</span>
               <span>R</span>
               <span>e</span>
               <span>s</span>

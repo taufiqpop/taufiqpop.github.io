@@ -1,12 +1,14 @@
-import GithubIcon from "./../public/assets/icons/github.svg";
-import LinkedInIcon from "./../public/assets/icons/linkedin.svg";
-import XIcon from "./../public/assets/icons/x.svg";
-import InstagramIcon from "./../public/assets/icons/instagram.svg";
-import FrontendIcon from "./../public/assets/icons/frontend.svg";
+import FullStackIcon from "./../public/assets/icons/full-stack.svg";
+import BackendIcon from "./../public/assets/icons/backend.svg";
 import DevOpsIcon from "./../public/assets/icons/dev-ops.svg";
 import FreelancerIcon from "./../public/assets/icons/freelance.svg";
-import BackendIcon from "./../public/assets/icons/backend.svg";
-import FullStackIcon from "./../public/assets/icons/full-stack.svg";
+
+import GithubIcon from "./../public/assets/icons/social/github.svg";
+import LinkedInIcon from "./../public/assets/icons/social/linkedin.svg";
+import DiscordIcon from "./../public/assets/icons/social/discord.svg";
+import SpotifyIcon from "./../public/assets/icons/social/spotify.svg";
+import YoutubeIcon from "./../public/assets/icons/social/youtube.svg";
+import LinktreeIcon from "./../public/assets/icons/social/linktree.svg";
 
 const navLinks = [
   {
@@ -41,10 +43,6 @@ const services = [
     icon: <BackendIcon />,
   },
   {
-    title: "Front-End Developer",
-    icon: <FrontendIcon />,
-  },
-  {
     title: "DevOps",
     icon: <DevOpsIcon />,
   },
@@ -57,6 +55,11 @@ const services = [
 const technologies = {
   languages: [
     {
+      name: "PHP",
+      icon: "/assets/tech/php.svg",
+      link: "https://www.php.net/",
+    },
+    {
       name: "JavaScript",
       icon: "/assets/tech/javascript.svg",
       link: "https://www.javascript.com/",
@@ -65,11 +68,6 @@ const technologies = {
       name: "TypeScript",
       icon: "/assets/tech/typescript.svg",
       link: "https://www.typescriptlang.org/",
-    },
-    {
-      name: "PHP",
-      icon: "/assets/tech/php.svg",
-      link: "https://www.php.net/",
     },
     {
       name: "Python",
@@ -94,14 +92,14 @@ const technologies = {
       link: "https://www.codeigniter.com/",
     },
     {
-      name: "Vue",
-      icon: "/assets/tech/vue.svg",
-      link: "https://vuejs.org/",
-    },
-    {
       name: "NextJS",
       icon: "/assets/tech/nextjs.svg",
       link: "https://nextjs.org/",
+    },
+    {
+      name: "Vue",
+      icon: "/assets/tech/vue.svg",
+      link: "https://vuejs.org/",
     },
     {
       name: "Bootstrap",
@@ -109,21 +107,21 @@ const technologies = {
       link: "https://getbootstrap.com/",
     },
     {
-      name: "TailwindCSS",
-      icon: "/assets/tech/tailwindcss.svg",
+      name: "Tailwind",
+      icon: "/assets/tech/tailwind.svg",
       link: "https://tailwindcss.com/",
     },
   ],
   libraries: [
     {
-      name: "React",
-      icon: "/assets/tech/react.svg",
-      link: "https://react.dev/",
-    },
-    {
       name: "jQuery",
       icon: "/assets/tech/jquery.svg",
       link: "https://jquery.com/",
+    },
+    {
+      name: "React",
+      icon: "/assets/tech/react.svg",
+      link: "https://react.dev/",
     },
     {
       name: "npm",
@@ -138,9 +136,9 @@ const technologies = {
       link: "https://www.mysql.com/",
     },
     {
-      name: "MariaDB",
-      icon: "/assets/tech/mariadb.svg",
-      link: "https://mariadb.org/",
+      name: "MongoDB",
+      icon: "/assets/tech/mongodb.svg",
+      link: "https://www.mongodb.com/",
     },
     {
       name: "PostgreSQL",
@@ -154,11 +152,11 @@ const technologies = {
       icon: "/assets/tech/vscode.svg",
       link: "https://code.visualstudio.com/",
     },
-    // {
-    //   name: "Antigravity",
-    //   icon: "/assets/tech/antigravity.svg",
-    //   link: "https://antigravity.google/",
-    // },
+    {
+      name: "Antigravity",
+      icon: "/assets/tech/antigravity.svg",
+      link: "https://antigravity.google/",
+    },
     {
       name: "Docker",
       icon: "/assets/tech/docker.svg",
@@ -169,21 +167,6 @@ const technologies = {
       icon: "/assets/tech/git.svg",
       link: "https://git-scm.com/",
     },
-    // {
-    //   name: "Github",
-    //   icon: "/assets/tech/github.svg",
-    //   link: "https://github.com/",
-    // },
-    // {
-    //   name: "Gitlab",
-    //   icon: "/assets/tech/gitlab.svg",
-    //   link: "https://gitlab.com/",
-    // },
-    // {
-    //   name: "Postman",
-    //   icon: "/assets/tech/postman.svg",
-    //   link: "https://www.postman.com/",
-    // },
     {
       name: "Insomnia",
       icon: "/assets/tech/insomnia.svg",
@@ -191,16 +174,6 @@ const technologies = {
     },
   ],
   os: [
-    // {
-    //   name: "PopOS",
-    //   icon: "/assets/tech/pop-os.svg",
-    //   link: "https://system76.com/pop",
-    // },
-    // {
-    //   name: "Ubuntu",
-    //   icon: "/assets/tech/ubuntu.svg",
-    //   link: "https://ubuntu.com/",
-    // },
     {
       name: "Linux",
       icon: "/assets/tech/linux.svg",
@@ -280,28 +253,11 @@ const experiences = [
 
 const testimonials = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    testimonial: "Test",
+    name: "Test",
+    designation: "Test",
+    company: "Test",
+    image: "#",
   },
 ];
 
@@ -410,35 +366,43 @@ const projects = [
 
 const socials = [
   {
-    id: "github",
-    icon: <GithubIcon />,
-    link: "https://github.com/taufiqpop",
-  },
-  {
     id: "linkedin",
     icon: <LinkedInIcon />,
     link: "https://www.linkedin.com/in/taufiqpop",
   },
   {
-    id: "x",
-    icon: <XIcon />,
-    link: "https://twitter.com/taufiqpop99",
+    id: "github",
+    icon: <GithubIcon />,
+    link: "https://github.com/taufiqpop",
   },
   {
-    id: "instagram",
-    icon: <InstagramIcon />,
-    link: "https://www.instagram.com/taufiqpop99",
+    id: "discord",
+    icon: <DiscordIcon />,
+    link: "https://discord.gg/CKXCwBZr72",
+  },
+  {
+    id: "spotify",
+    icon: <SpotifyIcon />,
+    link: "https://open.spotify.com/show/66lFgL2DzwXQQORXKkvsf4",
+  },
+  {
+    id: "linktree",
+    icon: <LinktreeIcon />,
+    link: "https://linktr.ee/TaufiqPop",
+  },
+  {
+    id: "youtube",
+    icon: <YoutubeIcon />,
+    link: "https://www.youtube.com/@TaufiqPop?sub_confirmation=1",
   },
 ];
 
 const heroTexts = [
-  "Software Developer",
+  "Full-Stack Developer",
   500,
   "Back-End Developer",
   500,
-  "Full-Stack Developer",
-  500,
-  "Freelancer",
+  "Software Developer",
   500,
 ];
 

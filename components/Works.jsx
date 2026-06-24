@@ -6,7 +6,7 @@ import Image from "next/image";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import truncateText from "@/utils/truncate";
-import GithubLogo from "./../public/assets/icons/github.svg";
+import GithubLogo from "./../public/assets/icons/social/github.svg";
 import RocketLogo from "./../public/assets/icons/rocket.svg";
 import Link from "next/link";
 
