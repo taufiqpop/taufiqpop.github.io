@@ -194,7 +194,7 @@ const technologies = {
 
 const experiences = [
   {
-    title: "Software Developer",
+    title: "Software Developer (On-Site)",
     company_name: "PT. Phicos Cipta Media",
     icon: "/assets/company/briefcase.svg",
     iconBg: "#E6DEDD",
@@ -208,7 +208,7 @@ const experiences = [
     ],
   },
   {
-    title: "IT Specialist",
+    title: "IT Specialist (On-Site)",
     company_name: "RSUI YAKSSI Gemolong",
     icon: "/assets/company/briefcase.svg",
     iconBg: "#E6DEDD",
@@ -218,21 +218,6 @@ const experiences = [
       "Managed website content and ensured system availability and performance.",
       "Provided technical support for network infrastructure, servers, computers, and printers.",
       "Performed troubleshooting, maintenance, and issue resolution to support daily hospital operations.",
-    ],
-  },
-  {
-    title: "IT Specialist",
-    company_name: "RAPMA FM Radio",
-    icon: "/assets/company/briefcase.svg",
-    iconBg: "#E6DEDD",
-    date: "January 2021 - December 2022",
-    points: [
-      "Managed and maintained RAPMA FM's website, blog, and event landing pages to support digital publications and audience engagement.",
-      "Monitored and analyzed website traffic, visitor behavior, and engagement metrics to support data-driven decision making.",
-      "Ensured the availability and performance of radio streaming services across web and mobile platforms.",
-      "Analyzed daily streaming listener data to identify audience trends and evaluate broadcasting performance.",
-      "Provided technical support for software, operating systems, hardware, and network infrastructure, including installation, configuration, maintenance, and troubleshooting.",
-      "Managed participant registration and ticketing databases for RAPMAFEST webinars and competitions, ensuring data accuracy and smooth event operations.",
     ],
   },
   {
@@ -247,6 +232,21 @@ const experiences = [
       "Managed and organized Kajian Ahad Pagi video archives and promotional content through an integrated database system.",
       "Developed administrative features to simplify content management and improve operational efficiency.",
       "Collaborated with the IT team during development, testing, and implementation phases.",
+    ],
+  },
+  {
+    title: "IT Specialist (Hybrid)",
+    company_name: "RAPMA FM Radio",
+    icon: "/assets/company/briefcase.svg",
+    iconBg: "#E6DEDD",
+    date: "January 2020 - December 2022",
+    points: [
+      "Managed and maintained RAPMA FM's website, blog, and event landing pages to support digital publications and audience engagement.",
+      "Monitored and analyzed website traffic, visitor behavior, and engagement metrics to support data-driven decision making.",
+      "Ensured the availability and performance of radio streaming services across web and mobile platforms.",
+      "Analyzed daily streaming listener data to identify audience trends and evaluate broadcasting performance.",
+      "Provided technical support for software, operating systems, hardware, and network infrastructure, including installation, configuration, maintenance, and troubleshooting.",
+      "Managed participant registration and ticketing databases for RAPMAFEST webinars and competitions, ensuring data accuracy and smooth event operations.",
     ],
   },
 ];
