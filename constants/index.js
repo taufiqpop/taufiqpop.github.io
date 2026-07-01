@@ -35,7 +35,7 @@ const navLinks = [
 
 const services = [
   {
-    title: "Software Developer",
+    title: "Software Engineer",
     icon: <FullStackIcon />,
   },
   {
@@ -398,11 +398,9 @@ const socials = [
 ];
 
 const heroTexts = [
-  "Full-Stack Developer",
+  "Software Engineer",
   500,
   "Back-End Developer",
-  500,
-  "Software Developer",
   500,
 ];
 
